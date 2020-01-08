@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { specials } from '../../../data';
 import SpecialButton from './SpecialButton';
-
+import "../../../App.css";
 
 //import any components needed
 
@@ -13,7 +13,7 @@ const Specials = () => {
     console.log(spec);
 
     return ( 
-    <div>
+    <div className="special-buttons">
         {spec.map((special, index) => {
             return <SpecialButton special={special} key={index}/>
         })}

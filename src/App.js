@@ -9,7 +9,7 @@ import "./App.css";
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from "./components/DisplayComponents/Logo";
-// import Display from './components/DisplayComponents/Display';
+import Display from './components/DisplayComponents/Display';
 // import { numbers } from "./data";
 
 function App() {
@@ -22,11 +22,11 @@ function App() {
     return ( 
     <div className = "container" >
         <Logo />
-        {/* <Display /> */}
+        <Display />
         <div className = "App" > { /* STEP 4 - Render your components here and be sure to properly import/export all files */ }  
-        <Numbers />
-        <Operators />
-        <Specials />
+            <Specials />
+            <Numbers />
+            <Operators />
         </div>  
     </div >
     );

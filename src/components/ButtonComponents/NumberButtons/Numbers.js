@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { numbers } from '../../../data';
 import NumberButton from './NumberButton';
+import "../../../App.css";
 
 
 
@@ -17,7 +18,7 @@ const Numbers = () => {
     console.log(nums);
 
     return ( 
-    <div> 
+    <div className = "number-buttons"> 
         {nums.map((number, index) => {
                 return <NumberButton key={index} number={number}/>
             })}
